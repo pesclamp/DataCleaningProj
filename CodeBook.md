@@ -22,30 +22,32 @@ Data manipulation
 Variables
 =========
 
-# Subject and activity identifiers
+### Subject and activity identifiers
 
 - "subject": An identifier of the subject who carried out the experiment. Identifiers are numbers between 1 and 30.
 - "activity": WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
 
-# Features from the original dataset used to calculate the average grouped by subject and activity
+### Features from the original dataset
 
 The features selected for the original database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ.
 
-## There are two groups:
+#### There are two groups:
 
 - Time domain signals (prefix 't' to denote time): captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
 
 - Fast Fourier Transform (FFT, prefix 'f'): applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag.
 
-## The complete list of variables selected are:
+#### The complete list of variables selected are:
 
 These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
 The set of variables that were averaged from the original datasets are: 
 
-mean(): Mean value
-std(): Standard deviation
+- mean(): Mean value.
+- std(): Standard deviation.
+
+Variables:
 
 - "tBodyAcc.mean...X"
 - "tBodyAcc.mean...Y"
